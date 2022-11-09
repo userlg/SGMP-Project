@@ -6,5 +6,18 @@
 
 @tailwind utilities;
 
+@import 'palet.scss';
+
+//---------Toggle button
+#toggle:checked ~ label  div .toggle-active{
+    @apply translate-x-3 bg-yellow-200;
+  }
+  
+  .toggle-reload {
+    @apply ml-3 bg-yellow-200;
+  }
+  
+
+
 
 //---------Class Customizer

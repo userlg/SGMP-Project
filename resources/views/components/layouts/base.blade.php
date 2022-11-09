@@ -12,8 +12,9 @@
     @vite(['resources/js/app.js'])
     <livewire:styles />
 
-    <body>
+    <body class="dark:bg-[.dark] ">
         <h2 class="font-bold text-center mb-10 text-pink-500">Testing tailwind Css</h2>
+
         {{ $slot }}
 
         <livewire:scripts />
