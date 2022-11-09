@@ -8,6 +8,10 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+use App\Models\Project;
+
+use App\Models\Setting;
+
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
@@ -41,4 +45,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    //********Relationships
+
+    public function projects()
+    {
+        return $this->hasMany(Project::class);
+    }
+
+    public function setting()
+    {
+        return $this->hasOne(Setting::class);
+    }
 }
