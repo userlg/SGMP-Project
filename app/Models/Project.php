@@ -9,6 +9,8 @@ use App\Models\User;
 
 use App\Models\Task;
 
+use App\Models\Participant;
+
 class Project extends Model
 {
     use HasFactory;
@@ -24,5 +26,10 @@ class Project extends Model
     public function tasks()
     {
         return $this->hasMany(Task::class);
+    }
+
+    public function participants()
+    {
+        return $this->hasMany(Participant::class);
     }
 }
