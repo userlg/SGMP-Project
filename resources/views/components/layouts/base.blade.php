@@ -9,6 +9,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>SGMP || {{ $title }}</title>
         <link rel="icon" href="{{ asset('favicon.ico') }}">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </head>
     @vite(['resources/js/app.js'])
     <livewire:styles />
