@@ -1,5 +1,3 @@
-console.log('Dark Mode');
-
 const toggle = document.querySelector("#toggle");
 
 const html = document.querySelector("html");
