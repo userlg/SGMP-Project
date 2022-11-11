@@ -1,5 +1,5 @@
 <div>
-    <nav class="p-5 bg-white dark:bg-night dark:ring-1 dark:ring-sred shadow md:flex md:items-center md:justify-between">
+    <nav class="p-5 bg-white dark:bg-night dark:ring-1 dark:ring-sred shadow md:flex md:items-center md:justify-between transition-all ease-linear duration-300">
         <div class="flex justify-between items-center ">
             <span class="text-2xl font-[Poppins] cursor-pointer">
                 <a href="{{ route('home') }}" class="flex flex-row gap-3"> <img class="h-10 inline"
@@ -26,20 +26,19 @@
         </div>
 
         <ul
-            class="md:flex md:items-center z-[5] md:z-auto md:static absolute dark:md:ring-transparent md:ring-transparent ring-1 ring-black bg-white dark:bg-night dark:ring-1 dark:ring-sred dark:text-white w-full gap-4 left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            class="md:flex md:items-center z-[5] md:z-auto md:static absolute dark:md:ring-transparent md:ring-transparent ring-1 ring-black bg-white dark:bg-night dark:ring-1 dark:ring-sred dark:text-white w-full gap-4 left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300">
             <li class=" my-1 md:my-0">
-                <a href="#" class="text-xl hover:text-cyan-500 dark:hover:text-yellow-200  duration-500">HOME</a>
+                <a href="{{ route('home') }}"
+                    class="text-xl hover:text-cyan-500 dark:hover:text-yellow-200  duration-500">Inicio</a>
+            </li>
+
+            <li class="my-1 md:my-0">
+                <a href="{{ route('about') }}"
+                    class="text-xl hover:text-cyan-500 dark:hover:text-yellow-200 duration-500">Acerca</a>
             </li>
             <li class="my-1 md:my-0">
                 <a href="#"
-                    class="text-xl hover:text-cyan-500 dark:hover:text-yellow-200 duration-500">SERVICE</a>
-            </li>
-            <li class="my-1 md:my-0">
-                <a href="#" class="text-xl hover:text-cyan-500 dark:hover:text-yellow-200 duration-500">ABOUT</a>
-            </li>
-            <li class="my-1 md:my-0">
-                <a href="#"
-                    class="text-xl hover:text-cyan-500 dark:hover:text-yellow-200 duration-500">CONTACT</a>
+                    class="text-xl hover:text-cyan-500 dark:hover:text-yellow-200 duration-500">Registrarse</a>
             </li>
 
             <button class="my-1 bg-sred text-white font-[Poppins] duration-500 px-6 py-2 hover:bg-cyan-500 rounded ">
@@ -90,7 +89,6 @@
         menubtn.addEventListener("click", () => {
             menu();
         })
-
     </script>
 
 

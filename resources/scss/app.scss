@@ -9,11 +9,11 @@
 
 //---------Toggle button
 #toggle:checked~label div .toggle-active {
-  @apply translate-x-3 bg-yellow-200;
+  @apply translate-x-3 bg-sred;
 }
 
 .toggle-reload {
-  @apply ml-3 bg-yellow-200;
+  @apply ml-3 bg-sred;
 }
 
 //---------Class Customizer
