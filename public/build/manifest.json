@@ -1,0 +1,24 @@
+{
+  "resources/js/app.js": {
+    "file": "assets/app.3e8d0555.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app.410777df.css"
+    ]
+  },
+  "resources/js/dark.js": {
+    "file": "assets/dark.204452b0.js",
+    "src": "resources/js/dark.js",
+    "isEntry": true
+  },
+  "resources/js/navbar.js": {
+    "file": "assets/navbar.5207976c.js",
+    "src": "resources/js/navbar.js",
+    "isEntry": true
+  },
+  "resources/js/app.css": {
+    "file": "assets/app.410777df.css",
+    "src": "resources/js/app.css"
+  }
+}
