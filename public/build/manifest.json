@@ -12,9 +12,8 @@
     "src": "resources/js/dark.js",
     "isEntry": true
   },
-  "resources/scss/app.scss": {
+  "resources/js/app.css": {
     "file": "assets/app.d3dea869.css",
-    "src": "resources/scss/app.scss",
-    "isEntry": true
+    "src": "resources/js/app.css"
   }
 }
