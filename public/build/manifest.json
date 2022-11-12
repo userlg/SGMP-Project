@@ -4,7 +4,7 @@
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app.1f8ef25d.css"
+      "assets/app.d3dea869.css"
     ]
   },
   "resources/js/dark.js": {
@@ -12,13 +12,9 @@
     "src": "resources/js/dark.js",
     "isEntry": true
   },
-  "resources/js/navbar.js": {
-    "file": "assets/navbar.5207976c.js",
-    "src": "resources/js/navbar.js",
+  "resources/scss/app.scss": {
+    "file": "assets/app.d3dea869.css",
+    "src": "resources/scss/app.scss",
     "isEntry": true
-  },
-  "resources/js/app.css": {
-    "file": "assets/app.1f8ef25d.css",
-    "src": "resources/js/app.css"
   }
 }
