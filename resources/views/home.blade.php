@@ -1,3 +1,3 @@
 <x-layouts.base title="Inicio">
-    <p class="text-green-400 font-semibold">Testing The main component</p>
+    <p class="text-center text-sred font-semibold text-base md:text-2xl">Home View</p>
 </x-layouts.base>

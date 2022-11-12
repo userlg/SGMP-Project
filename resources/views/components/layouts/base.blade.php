@@ -18,12 +18,12 @@
     <body class="bg-white box-content dark:bg-night transition-all duration-300 ease-linear">
 
         <x-layouts.navbar />
-           
-        <div class="py-5">
-        
-        {{ $slot }}
 
-       </div>
+        <div class="py-5">
+
+            {{ $slot }}
+
+        </div>
 
         <livewire:scripts />
     </body>
