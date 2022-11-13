@@ -6,6 +6,9 @@
 
 @tailwind utilities;
 
+//--------Fonts Customizer
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 //---------Toggle button
 #toggle:checked~label div .toggle-active {

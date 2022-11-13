@@ -1,7 +1,7 @@
 <div>
     {{-- Base Template Component --}}
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="es">
 
     <head>
         <meta charset="UTF-8">
@@ -20,6 +20,12 @@
         <x-layouts.navbar />
 
         <div class="py-5">
+
+            @if (session('status') == 'verification-link-sent')
+                <div class="mb-4  font-medium text-sm  md:text-base md:text-xl text-center text-sred font-pacifico">
+                    Un nuevo link de verification ha sido enviado!
+                </div>
+            @endif
 
             {{ $slot }}
 

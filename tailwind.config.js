@@ -7,6 +7,9 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
+    fontFamily: {
+      'pacifico': ['Pacifico', 'cursive'],
+    },
     extend: {
       colors: {
         night: '#0A0E22',
