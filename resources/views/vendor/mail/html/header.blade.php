@@ -4,7 +4,8 @@
         <a href="{{ $url }}" style="display: inline-block;">
 
             @if (trim($slot) === 'SGMP')
-                <img src="https://laravel.com/img/notification-logo.png" class="logo" alt="Laravel Logo">
+                <img src="https://i.imgur.com/lD8lBAb.png" style="width: 200px; height: 200px;" alt="Logo"
+                    class="logo">
             @else
                 <img src="https://i.imgur.com/lD8lBAb.png" style="width: 200px; height: 200px;" alt="Logo"
                     class="logo">
