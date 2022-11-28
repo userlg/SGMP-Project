@@ -1,11 +1,11 @@
 <div>
     <nav
-        class="p-5 bg-white dark:bg-night dark:ring-1 dark:ring-sred shadow md:flex md:items-center md:justify-between transition-all ease-linear duration-300">
+        class="p-5 bg-white dark:bg-night dark:ring-1 dark:ring-sred shadow md:flex md:items-center md:justify-between transition-all rounded ease-linear duration-300">
         <div class="flex justify-between items-center ">
             <span class="text-2xl font-[Poppins] cursor-pointer">
                 <a href="{{ route('home') }}" class="flex flex-row gap-3"> <img class="h-10 inline"
                         src="{{ asset('logo.png') }}">
-                    <h2 class="text-black dark:text-white">SGMP</h2>
+                    <h2 class="text-black dark:text-white font-bold">SGMP</h2>
                 </a>
             </span>
 

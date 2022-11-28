@@ -30,15 +30,15 @@
 
             <label for="password_confirmation" class="flex flex-col justify-center items-center">
                 <input type="password" name="password_confirmation" placeholder="password confirmation"
-                    class="border border-black rounded w-full"
-                    value="{{ old('password_confirmation') }}">
+                    class="border border-black rounded w-full" value="{{ old('password_confirmation') }}">
                 @error('password_confirmation')
                     <p class="dark:text-sred">{{ $message }}</p>
                 @enderror
             </label>
 
 
-            <button class="text-white text-sm sm:text-base bg-sred p-2 rounded  w-1/2 sm:w-3/4 mb-8">Registrarse</button>
+            <button
+                class="text-white text-sm sm:text-base bg-sred p-2 rounded  w-1/2 sm:w-3/4 mb-8">Registrarse</button>
         </form>
     </div>
     {{-- ************ --}}

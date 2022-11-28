@@ -22,7 +22,7 @@
         <div class="py-5">
 
             @if (session('status') == 'verification-link-sent')
-                <div class="mb-4  font-medium text-sm  md:text-base md:text-xl text-center text-sred font-pacifico">
+                <div class="mb-4  font-medium text-sm   md:text-xl text-center text-sred font-pacifico">
                     Un nuevo link de verification ha sido enviado!
                 </div>
             @endif
