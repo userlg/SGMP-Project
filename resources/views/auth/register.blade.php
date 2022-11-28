@@ -2,7 +2,7 @@
     {{-- Login FORM --}}
     <div class="mt-40">
         <form action="{{ route('register') }}" method="POST"
-            class="border border-black dark:border-sred w-11/12 md:w-1/5 mx-auto flex flex-col p-3 justify-center items-center gap-4 ">
+            class="border border-black dark:border-sred rounded-md w-11/12 md:w-1/5 mx-auto flex flex-col p-3 justify-center items-center gap-4 ">
             <h2 class="text-sred font-bold text-center text-md md:text-2xl mt-4">Registro</h2>
             @csrf
             <label for="name" class="flex flex-col justify-center items-center">
