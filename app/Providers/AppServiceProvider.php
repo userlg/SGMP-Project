@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
             return (new MailMessage)
                 ->greeting('Hola, nuevo usuario')
                 ->subject(Lang::get('Verifica Tu Direccion Email'))
-                ->line(Lang::get('Haz click en el boton abajo'))
+                ->line(Lang::get('Clickea el boton abajo'))
                 ->action(Lang::get('Verificar Email'), $verificationUrl)
                 ->line(Lang::get('Si no has creado alguna cuenta, la solicitud vence en 5 minutos'))
                 ->salutation("Saludos");
