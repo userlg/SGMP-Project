@@ -5,11 +5,17 @@
             <h3 class="text-sred font-semibold capitalize"> {{ auth()->user()->name }} </h3>
         </div>
 
-        @if ($projects == 0)
-            <p class="dark:text-white">Crea tu primer proyecto!!</p>
-        @else
-            <p class="dark:text-white">Total de Proyectos <strong class="text-sred">{{ $projects }}</strong></p>
-        @endif
-
+        <div class="my-4">
+            @if ($projects == 0)
+                <p class="dark:text-white text-center">Crea tu primer proyecto!!</p>
+            @else
+                <p class="dark:text-white text-center">Total de Proyectos <strong
+                        class="text-sred font-bold">{{ $projects }}</strong></p>
+            @endif
+        </div>
     </div>
+
+   <livewire:create-project>
+   
+   
 </x-layouts.base>

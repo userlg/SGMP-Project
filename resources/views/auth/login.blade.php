@@ -7,14 +7,14 @@
             @csrf
             <label for="email" class="flex flex-col justify-center items-center">
                 <input type="email" placeholder="email" name="email"
-                    class="border border-black rounded dark:text-white w-full" value="{{ old('email') }}">
+                    class="border border-black rounded dark:text-black w-full" value="{{ old('email') }}">
                 @error('email')
                     <p class="dark:text-sred">{{ $message }}</p>
                 @enderror
             </label>
             <label for="password" class="flex flex-col justify-center items-center">
                 <input type="password" placeholder="password" name="password"
-                    class="border border-black rounded w-full">
+                    class="border border-black rounded w-full text-black">
                 @error('password')
                     <p class="dark:text-sred">{{ $message }}</p>
                 @enderror
