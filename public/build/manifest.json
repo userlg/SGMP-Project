@@ -4,7 +4,7 @@
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app.46e14016.css"
+      "assets/app.f252667d.css"
     ]
   },
   "resources/js/dark.js": {
@@ -12,9 +12,8 @@
     "src": "resources/js/dark.js",
     "isEntry": true
   },
-  "resources/scss/app.scss": {
-    "file": "assets/app.46e14016.css",
-    "src": "resources/scss/app.scss",
-    "isEntry": true
+  "resources/js/app.css": {
+    "file": "assets/app.f252667d.css",
+    "src": "resources/js/app.css"
   }
 }
