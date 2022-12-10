@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'pacifico': ['Pacifico', 'cursive'],
+      'RussoOne': ['Russo One', 'sans-serif'],
     },
     extend: {
       keyframes: {
