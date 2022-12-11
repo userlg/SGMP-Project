@@ -15,7 +15,7 @@
         </div>
     </div>
 
-   <livewire:create-project>
-   
-   
+    <livewire:create-project>
+
+
 </x-layouts.base>

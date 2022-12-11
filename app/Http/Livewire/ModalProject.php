@@ -4,10 +4,31 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
+use Illuminate\Support\Facades\Auth;
+
+use App\Models\Project;
+
 class ModalProject extends Component
 {
+    public $open;
 
-    public $open = false;
+    public $title;
+
+    public $description;
+
+    public $user_id;
+
+    public function mount()
+    {
+
+        $this->title = "";
+
+        $this->description = "";
+
+        $this->open = false;
+
+        $this->user_id = Auth::user()->id;
+    }
 
     protected $listeners = ['show'];
 
@@ -16,11 +37,36 @@ class ModalProject extends Component
         $this->open = $open;
     }
 
-    public function close(){
+    //*************Validation Rules
+    protected $rules = [
+
+        'title' => 'required|min:6|max:60',
+
+        'description' => 'required|min:6|max:1000',
+    ];
+
+    public function updated($propertyName)
+    {
+        $this->validateOnly($propertyName);
+    }
+
+    //**********Function to create the project
+    public function saveProject()
+    {
 
         $this->open = false;
 
-        $this->emitTo('create-project','close', $this->open);
+        $this->emitTo('create-project', 'close', $this->open);
+
+        $validatedData = $this->validate();
+
+        $this->reset(['title','description']);
+
+        Project::create([
+            'title' => $validatedData['title'],
+            'description' => $validatedData['description'],
+            'user_id' => $this->user_id
+        ]);
     }
 
     public function render()

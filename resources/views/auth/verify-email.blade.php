@@ -2,7 +2,7 @@
     <div class="container mx-auto">
         <div
             class="flex flex-col p-4 justify-center items-center mx-auto mt-10 gap-4 border border-black shadow-lg shadow-gray-400 bg-white w-11/12 md:w-1/3 rounded dark:bg-night dark:border-none dark:shadow-sred">
-            <div class="text-sred text-base md:text-2xl font-semibold ">{{ __('Verifica Tu email') }}</div>
+            <div class="text-sred text-base md:text-2xl font-semibold font-pacifico ">{{ __('Verifica Tu email') }}</div>
             <div class="mx-auto flex flex-col justify-center items-center gap-8">
                 @if (session('resent'))
                     <div class="alert alert-success dark:text-white" role="alert">
