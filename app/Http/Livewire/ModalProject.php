@@ -53,20 +53,31 @@ class ModalProject extends Component
     //**********Function to create the project
     public function saveProject()
     {
-
-        $this->open = false;
-
-        $this->emitTo('create-project', 'close', $this->open);
-
         $validatedData = $this->validate();
 
-        $this->reset(['title','description']);
+        if (count($validatedData) > 0) {
+            $this->open = false;
 
-        Project::create([
-            'title' => $validatedData['title'],
-            'description' => $validatedData['description'],
-            'user_id' => $this->user_id
-        ]);
+            $this->emitTo('create-project', 'close', $this->open);
+
+            $this->reset(['title', 'description']);
+
+            Project::create([
+                'title' => $validatedData['title'],
+                'description' => $validatedData['description'],
+                'user_id' => $this->user_id
+            ]);
+        }
+    }
+
+
+    public function close()
+    {
+        $this->open = false;
+
+        $this->reset(['title', 'description']);
+
+        $this->emitTo('create-project', 'close', $this->open);
     }
 
     public function render()
