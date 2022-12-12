@@ -11,6 +11,7 @@
 
                 <form wire:submit.prevent="saveProject"
                     class="flex mx-auto p-2 justify-center items-center flex-col gap-4">
+                    @csrf
                     <input type="text" wire:model="title" name="title" class="border-2 border-black rounded-md"
                         placeholder="titulo">
                     @error('title')
