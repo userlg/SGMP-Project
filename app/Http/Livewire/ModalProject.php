@@ -10,13 +10,7 @@ use App\Models\Project;
 
 class ModalProject extends Component
 {
-    public $open;
-
-    public $title;
-
-    public $description;
-
-    public $user_id;
+    public $open, $title, $description, $user_id;
 
     public function mount()
     {
@@ -59,6 +53,16 @@ class ModalProject extends Component
             $this->open = false;
 
             $this->emitTo('create-project', 'close', $this->open);
+
+            $open = true;
+
+            $title = "Exito!";
+
+            $message = "Haz click en el boton";
+
+            $icon = "success";
+
+            $this->emitTo('modal-notify', 'build', $open, $title, $message, $icon);
 
             $this->reset(['title', 'description']);
 

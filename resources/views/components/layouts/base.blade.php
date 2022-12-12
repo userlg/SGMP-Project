@@ -32,6 +32,7 @@
         </div>
 
         <livewire:scripts />
+
     </body>
 
     </html>

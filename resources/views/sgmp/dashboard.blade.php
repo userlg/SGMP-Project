@@ -17,5 +17,4 @@
 
     <livewire:create-project>
 
-
 </x-layouts.base>

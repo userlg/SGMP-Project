@@ -4,5 +4,5 @@ import './dark';
 
 import '../scss/app.scss';
 
-console.log('Welcome To SGMP Project')
 
+console.log('Welcome To SGMP Project');
