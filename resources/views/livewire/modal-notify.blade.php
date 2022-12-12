@@ -21,7 +21,7 @@
                 <h1 class="text-md md:text-2xl mb-4 font-semibold font-pacifico text-sred">{{ $title }}</h1>
 
                 <div>
-                    <p class="dark:text-white font-medium">{{ $message }}</p>
+                    <p class="dark:text-white font-semibold">{{ $message }}</p>
                 </div>
 
                 <button

@@ -34,10 +34,10 @@
                     </div>
                     <div class="flex flex-row gap-2 justify-center items-center">
                         <div wire:click="close"
-                            class="bg-blue-800 px-7 py-2 ml-2 rounded-md shadow-none dark:shadow-sm dark:shadow-purple-700 text-md text-white text-sm md:text-base font-semibold cursor-pointer">
+                            class="bg-blue-800 p-2 ml-2 rounded-md shadow-none dark:shadow-sm dark:shadow-purple-700 text-md text-white text-sm md:text-base font-semibold cursor-pointer">
                             Cerrar</div>
                         <button
-                            class="bg-sred px-7 py-2 ml-2 rounded-md text-md text-white text-sm md:text-base font-semibold">Crear</button>
+                            class="bg-sred p-2 ml-2 rounded-md text-md text-white text-sm md:text-base font-semibold">Guardar</button>
                     </div>
 
                 </form>

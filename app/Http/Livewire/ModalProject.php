@@ -50,9 +50,8 @@ class ModalProject extends Component
         $validatedData = $this->validate();
 
         if (count($validatedData) > 0) {
-            $this->open = false;
 
-            $this->emitTo('create-project', 'close', $this->open);
+            $this->open = false;
 
             $open = true;
 
@@ -63,6 +62,10 @@ class ModalProject extends Component
             $icon = "success";
 
             $this->emitTo('modal-notify', 'build', $open, $title, $message, $icon);
+
+            $this->emitTo('create-project', 'close', $this->open);
+
+            $this->emitTo('update-projects', 'updateProjects', $this->user_id);
 
             $this->reset(['title', 'description']);
 
