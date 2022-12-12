@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Project;
 
 use Illuminate\Support\Facades\Auth;
 
@@ -33,6 +33,6 @@ class UpdateProjects extends Component
 
     public function render()
     {
-        return view('livewire.update-projects');
+        return view('livewire.project.update-projects');
     }
 }

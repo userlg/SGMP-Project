@@ -16,9 +16,9 @@
     </div>
 
     {{-- Livewire Component to Create projects --}}
-    <livewire:modal-project />
+    <livewire:project.modal-project />
 
     {{-- Livewire Component to Show Notifications --}}
-    <livewire:modal-notify />
+    <livewire:project.modal-notify />
 
 </div>

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Project;
 
 use Livewire\Component;
 
@@ -61,11 +61,11 @@ class ModalProject extends Component
 
             $icon = "success";
 
-            $this->emitTo('modal-notify', 'build', $open, $title, $message, $icon);
+            $this->emitTo('project.modal-notify', 'build', $open, $title, $message, $icon);
 
-            $this->emitTo('create-project', 'close', $this->open);
+            $this->emitTo('project.create-project', 'close', $this->open);
 
-            $this->emitTo('update-projects', 'updateProjects', $this->user_id);
+            $this->emitTo('project.update-projects', 'updateProjects', $this->user_id);
 
             $this->reset(['title', 'description']);
 
@@ -89,6 +89,6 @@ class ModalProject extends Component
 
     public function render()
     {
-        return view('livewire.modal-project');
+        return view('livewire.project.modal-project');
     }
 }

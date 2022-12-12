@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Project;
 
 use Livewire\Component;
 
@@ -48,6 +48,6 @@ class ModalNotify extends Component
 
     public function render()
     {
-        return view('livewire.modal-notify');
+        return view('livewire.project.modal-notify');
     }
 }

@@ -5,10 +5,10 @@
             <h3 class="text-sred font-semibold capitalize"> {{ auth()->user()->name }} </h3>
         </div>
 
-        <livewire:update-projects />
+        <livewire:project.update-projects />
 
     </div>
 
-    <livewire:create-project>
+    <livewire:project.create-project>
 
 </x-layouts.base>
