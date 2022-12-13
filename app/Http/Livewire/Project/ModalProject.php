@@ -67,6 +67,8 @@ class ModalProject extends Component
 
             $this->emitTo('project.update-projects', 'updateProjects', $this->user_id);
 
+            $this->emitTo('project.show-projects', 'update');
+
             $this->reset(['title', 'description']);
 
             Project::create([

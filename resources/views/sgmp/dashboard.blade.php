@@ -2,13 +2,15 @@
     <div>
         <div class="flex flex-row gap-1  justify-center items-center">
             <p class="dark:text-white"> Bienvenido al Dashboard </p>
-            <h3 class="text-sred font-semibold capitalize"> {{ auth()->user()->name }} </h3>
+            <h3 class="text-sred font-extrabold capitalize "> {{ auth()->user()->name }} </h3>
         </div>
 
         <livewire:project.update-projects />
 
     </div>
 
-    <livewire:project.create-project>
+    <livewire:project.create-project />
+
+    <livewire:project.show-projects />
 
 </x-layouts.base>
