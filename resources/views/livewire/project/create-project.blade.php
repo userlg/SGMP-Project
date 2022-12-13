@@ -1,7 +1,7 @@
 <div>
     <div class="flex items-center justify-center">
 
-        <button class="p-2 bg-sred rounded-sm" wire:click="openModal">
+        <button class="p-1 bg-sred rounded-sm cursor-pointer" wire:click="openModal">
             <div class="flex flex-row gap-2 p-1 justify-center items-center">
                 <h3 class="text-white font-semibold">Crear</h3>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -11,8 +11,6 @@
 
             </div>
         </button>
-
-
     </div>
 
     {{-- Livewire Component to Create projects --}}

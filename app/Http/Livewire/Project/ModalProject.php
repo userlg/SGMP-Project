@@ -85,6 +85,8 @@ class ModalProject extends Component
         $this->reset(['title', 'description']);
 
         $this->emitTo('create-project', 'close', $this->open);
+
+        $this->resetValidation();
     }
 
     public function render()

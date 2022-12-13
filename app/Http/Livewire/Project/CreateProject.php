@@ -13,8 +13,7 @@ class CreateProject extends Component
 
     public function openModal()
     {
-
-        $this->open = !($this->open);
+        $this->open = true;
 
         $this->emitTo('project.modal-project', 'show', $this->open);
     }

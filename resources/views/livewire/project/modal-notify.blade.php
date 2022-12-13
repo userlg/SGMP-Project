@@ -6,7 +6,7 @@
         <div
             class="bg-slate-800 bg-opacity-50 flex justify-center items-center absolute top-0 right-0 bottom-0 left-0 animate-fade-in-down">
             <div
-                class="bg-white dark:bg-night px-16 dark:shadow-md dark:shadow-sred py-14 rounded-md text-center w-11/12 md:w-1/2 max-w-lg flex flex-col justify-center items-center gap-2">
+                class="bg-white dark:bg-night p-6 dark:shadow-md dark:shadow-sred rounded-md text-center w-11/12 md:w-1/6 max-w-lg flex flex-col justify-center items-center gap-2">
 
                 <div
                     class="flex flex-col justify-center items-center m-1 border-2 border-green-700 dark:border-sred rounded-full mx-auto w-7 h-7">
