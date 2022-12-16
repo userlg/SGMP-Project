@@ -4,7 +4,7 @@
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app.9e2aae8e.css"
+      "assets/app.a8cfdb2e.css"
     ]
   },
   "resources/js/dark.js": {
@@ -12,8 +12,9 @@
     "src": "resources/js/dark.js",
     "isEntry": true
   },
-  "resources/js/app.css": {
-    "file": "assets/app.9e2aae8e.css",
-    "src": "resources/js/app.css"
+  "resources/scss/app.scss": {
+    "file": "assets/app.a8cfdb2e.css",
+    "src": "resources/scss/app.scss",
+    "isEntry": true
   }
 }

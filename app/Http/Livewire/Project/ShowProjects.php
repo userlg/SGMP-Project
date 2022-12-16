@@ -24,10 +24,10 @@ class ShowProjects extends Component
     }
 
 
-    public function update(){
+    public function update()
+    {
 
         $this->projects = Project::where('user_id', $this->user_id)->get();
-
     }
 
     public function render()

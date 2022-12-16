@@ -39,17 +39,17 @@
             @else
                 <li class=" my-1 md:my-0">
                     <a href="{{ route('home') }}"
-                        class="text-xl  dark:hover:text-yellow-200  hover:text-orange-400 transition-all ease-linear duration-500">Inicio</a>
+                        class="text-xl  dark:hover:text-yellow-200  hover:text-orange-400 transition-all ease-linear duration-500 {{ request()->routeIs('home') ? ' text-sred underline' : 'text-black dark:text-white' }}">Inicio</a>
                 </li>
 
                 <li class="my-1 md:my-0">
                     <a href="{{ route('about') }}"
-                        class="text-xl hover:text-orange-400 transition-all ease-linear duration-500 dark:hover:text-yellow-200">Acerca</a>
+                        class="text-xl hover:text-orange-400 transition-all ease-linear duration-500 dark:hover:text-yellow-200 {{ request()->routeIs('about') ? ' text-sred underline' : 'text-black dark:text-white' }}">Acerca</a>
                 </li>
 
                 <li class="my-1 md:my-0">
                     <a href="{{ route('register') }}"
-                        class="text-xl hover:text-orange-400 transition-all ease-linear duration-500 dark:hover:text-yellow-200">Registrarse</a>
+                        class="text-xl hover:text-orange-400 transition-all ease-linear duration-500 dark:hover:text-yellow-200 {{ request()->routeIs('register') ? ' text-sred underline' : 'text-black dark:text-white' }}">Registrarse</a>
                 </li>
 
                 <button class="my-1 bg-sred cursor-pointer text-white font-[Poppins] duration-500 px-6 py-2 rounded ">
