@@ -7,7 +7,7 @@
                     <th class="invisible sm:visible sm:w-10 lg:w-auto">#</th>
                     <th class="text-xs sm:text-base w-20 md:w-1/4 lg:w-auto capitalize">titulo</th>
                     <th class='text-xs sm:text-base w-1/3 md:w-1/4 lg:w-auto overflow-x-hidden capitalize'>
-                        description</th>
+                        descripcion</th>
                     <th class="text-xs sm:text-base w-1/3 md:w-1/4 lg:w-auto capitalize">Creado</th>
                     <th class="text-xs sm:text-base   w-1/3 sm:w-1/2 md:w-36 lg:w-auto capitalize">Opciones</ </tr>
             </thead>
@@ -16,7 +16,7 @@
                     <tr>
                         <td class='invisible sm:visible text-xs sm:text-base'>{{ $project->id }}</td>
                         <td class="text-xs md:text-base overflow-x-hidden">{{ $project->title }}</td>
-                        <td class="text-xs md:text-base">{{ $project->description }} gr</td>
+                        <td class="text-xs md:text-base overflow-hidden">{{ $project->description }} gr</td>
                         <td>
                             <div class="flex flex-row justify-center items-center gap-2">
                                 <p class="text-xs md:text-base font-medium"> {{ $project->created_at->diffForHumans() }}

@@ -17,6 +17,17 @@
 
     <body class="bg-white box-content dark:bg-night transition-all duration-300 ease-linear">
 
+
+
+        {{-- Loading Window Effect --}}
+        <div id="container-loader" class="mx-auto">
+            <div id="loading_container">
+                <div id="loading"></div>
+            </div>
+        </div>
+        {{-- ------ --}}
+
+
         <x-layouts.navbar />
 
         <div class="py-5">
